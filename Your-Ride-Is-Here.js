@@ -63,3 +63,12 @@ function convert(word) {
 }
 
 // or
+
+function ride(group, comet) {
+  function getMode(text) {
+    return text.split('').reduce(function(a, b) {
+      return a*(b.charCodeAt(0)-64)
+    },1)
+  }
+  return getMode(group)%47==getMode(comet)%47?'GO':'STAY'
+}
