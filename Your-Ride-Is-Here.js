@@ -50,3 +50,14 @@ the mission is 'GO'.
 
 
 // Solution
+
+function ride(group, comet) {
+  return convert(group) === convert(comet) ? 'GO'  : 'STAY'
+}
+
+function convert(word) {
+  for (let n = 1, i = 0; i < word.length; i++) {
+    n *= word.charCodeAt(i) - 64
+  }
+  return n % 47
+}
