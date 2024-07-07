@@ -47,3 +47,6 @@ Then calculate the product mod 47:
 Because both products evaluate to 27 (when modded by 47), 
 the mission is 'GO'.
 */
+
+
+// Solution
