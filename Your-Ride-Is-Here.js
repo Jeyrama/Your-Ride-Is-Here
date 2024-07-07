@@ -61,3 +61,5 @@ function convert(word) {
   }
   return n % 47
 }
+
+// or
